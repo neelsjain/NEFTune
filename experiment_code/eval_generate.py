@@ -103,7 +103,7 @@ if __name__ == "__main__":
     raw_data = raw_data.map(eval_preproc)
 
     ## run generation
-    generate_kwargs = dict(max_length=1024, do_sample=False, top_p=0.1, 
+    generate_kwargs = dict(max_length=2048, do_sample=False, top_p=0.1, 
                            num_return_sequences=1, temperature=0.1, 
                            repetition_penalty=1.2)
     generate = partial(generate_responses_batched, 
