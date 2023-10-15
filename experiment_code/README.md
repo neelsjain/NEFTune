@@ -6,6 +6,8 @@ conda create -n hug python=3.11
 pip install -r requirements.txt
 ```
 
+Please use the pytorch version that is specified in the requirements. Otherwise, this may cause some problems when loading in the model in `train.py`.
+
 # Converting checkpoints from huggingface to fsdp
 The `convert_hf_to_fsdp.py` converts huggingface checkpoint to one that can be loaded by fsdp. After conversion, the model can be loaded in a distributed manner consuming much less memory. Usually, when loading the hugging face model to N GPUs, one needs to first realize N models in CPU memory before moving the model to GPUs. This can easily blow out the CPU memory if the model is large. You can convert the model by running the command below. We ran these experiments over 4xA5000. Each A5000 has a GPU memory of 24GB.
 
