@@ -5,6 +5,9 @@ In this paper, we propose to add random noise to the embedding vectors of the tr
 <img src=imgs/AlpacaEval_Figue1.png width="80%">
 </p>
 
+## News 
+[10/17/2023] NEFTune has been intregrated into the Huggingface's TRL (Transformer Reinforcement Learning) library. [See Annoucement](https://x.com/younesbelkada/status/1714283468790935687?s=20).
+
 ## Code
 The easiest way to incorporate NEFTune into your training procedure is to rewrite the forward for the embedding. An example of one way to do this for LLaMA is provided below. Note different distributed training will require different implementations.
 
