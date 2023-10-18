@@ -1,12 +1,14 @@
 # NEFTune
 
+
+[10/17/2023] NEFTune has been intregrated into the Huggingface's TRL (Transformer Reinforcement Learning) library. [See Annoucement](https://x.com/younesbelkada/status/1714283468790935687?s=20).
+
+## Overview
 In this paper, we propose to add random noise to the embedding vectors of the training data during the forward pass of fine-tuning. We show that this simple trick can improve the outcome of instruction fine-tuning, often by a large margin, with no additional compute or data overhead. <u>N</u>oisy <u>E</u>mbedding Instruction <u>F</u>ine <u>T</u>uning (NEFTune), while simple, has a strong impact on downstream conversational quality.  When a raw LLM like LLaMA-2-7B is finetuned with noisy embeddings with popular Alpaca dataset, its performance on *AlpacaEval* improves from 29.8\% to 64.7\% -- an impressive boost of around 35 percentage points. NEFTune leads to this surprising and large jump in performance on conversational tasks, maintaining performance on factual question answering baselines. Using noisy embeddings seems to be a free lunch for LLM fine-tuning. The paper can be found [here](https://arxiv.org/abs/2310.05914).
 <p align="center">
 <img src=imgs/AlpacaEval_Figue1.png width="80%">
 </p>
 
-## News 
-[10/17/2023] NEFTune has been intregrated into the Huggingface's TRL (Transformer Reinforcement Learning) library. [See Annoucement](https://x.com/younesbelkada/status/1714283468790935687?s=20).
 
 ## Code
 The easiest way to incorporate NEFTune into your training procedure is to rewrite the forward for the embedding. An example of one way to do this for LLaMA is provided below. Note different distributed training will require different implementations.
