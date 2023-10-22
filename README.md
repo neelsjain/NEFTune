@@ -3,7 +3,7 @@
 
 [10/17/2023] NEFTune has been intregrated into the Huggingface's TRL (Transformer Reinforcement Learning) library. [See Annoucement](https://x.com/younesbelkada/status/1714283468790935687?s=20).
 
-Please see our [limitations section]([https://github.com/user/repo/blob/branch/other_file.md](https://github.com/neelsjain/NEFTune#limitations) as there are several. 
+Please see our [limitations](https://github.com/neelsjain/NEFTune#limitations). 
 
 
 
