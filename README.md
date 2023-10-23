@@ -5,7 +5,7 @@
 
 Please see the [limitations](https://github.com/neelsjain/NEFTune#limitations) of our study below. 
 
-
+Feel free to reach out to me as well (email at the bottom of the page 1 in the paper). 
 
 ## Overview
 In this paper, we propose to add random noise to the embedding vectors of the training data during the forward pass of fine-tuning. We show that this simple trick can improve the outcome of instruction fine-tuning, often by a large margin, with no additional compute or data overhead. <u>N</u>oisy <u>E</u>mbedding Instruction <u>F</u>ine <u>T</u>uning (NEFTune), while simple, has a strong impact on downstream conversational quality.  When a raw LLM like LLaMA-2-7B is finetuned with noisy embeddings with popular Alpaca dataset, its performance on *AlpacaEval* improves from 29.8\% to 64.7\% -- an impressive boost of around 35 percentage points. NEFTune leads to this surprising and large jump in performance on conversational tasks, maintaining performance on factual question answering baselines. Using noisy embeddings seems to be a free lunch for LLM fine-tuning. The paper can be found [here](https://arxiv.org/abs/2310.05914).
