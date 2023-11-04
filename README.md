@@ -3,7 +3,7 @@
 
 [10/17/2023] NEFTune has been intregrated into the Huggingface's TRL (Transformer Reinforcement Learning) library. [See Annoucement](https://x.com/younesbelkada/status/1714283468790935687?s=20).
 
-Please see the [limitations](https://github.com/neelsjain/NEFTune#limitations) of our study below. 
+Please see the [limitations](https://github.com/neelsjain/NEFTune#limitations) of our study below. Additionally, for generation, we suggest using greedy decoding with a repetition penalty of 1.2.
 
 Feel free to reach out to me as well (email at the bottom of the page 1 in the paper). 
 
