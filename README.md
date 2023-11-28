@@ -1,10 +1,10 @@
 # NEFTune
 
-[10/17/2023] NEFTune has been integrated into the Huggingface's TRL (Transformer Reinforcement Learning) library. [See Annoucement](https://x.com/younesbelkada/status/1714283468790935687?s=20).
+[10/17/2023] NEFTune has been integrated into the Huggingface's TRL (Transformer Reinforcement Learning) library and HF Trainer . [See Annoucement](https://x.com/younesbelkada/status/1714283468790935687?s=20).
 
 [11/25/2023] NEFTune has been integrated into [Ludwig.ai](https://ludwig.ai) for LLM fine-tuning. [See PR](https://github.com/ludwig-ai/ludwig/pull/3744).
 
-Please see the [limitations](https://github.com/neelsjain/NEFTune#limitations) of our study below. Additionally, for generation, we suggest using greedy decoding with a repetition penalty of 1.2.
+Please see the [limitations](https://github.com/neelsjain/NEFTune#limitations) of our study below. Additionally, for generation, we suggest using greedy decoding with a repetition penalty of $1.2$.
 
 Feel free to reach out to me as well (email at the bottom of the page 1 in the paper).
 
