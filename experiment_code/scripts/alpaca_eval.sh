@@ -1,7 +1,7 @@
 # generating answers for alpaca_eval
 MODEL_PATH=checkpoints/naive/1217/model
 MODEL_NAME=llama7B_Alpaca
-MODEL_CONFIG=models/llama7B/config.json
+MODEL_CONFIG=models/llama7B/
 ANSWER_FILE=outputs/answers/alpaca_eval_${MODEL_NAME}.json
 python eval_generate.py --model $MODEL_PATH --file_path alpaca_eval --save_file_name $ANSWER_FILE --model_name $MODEL_NAME --model_config_path $MODEL_CONFIG
 alpaca_eval --model_outputs $ANSWER_FILE --name $MODEL_NAME --annotators_config chatgpt_fn --caching_path=outputs/cached_annotations.json # gpt3.5 evaluation
