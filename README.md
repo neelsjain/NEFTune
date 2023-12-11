@@ -4,7 +4,7 @@
 
 [11/25/2023] NEFTune has been integrated into [Ludwig.ai](https://ludwig.ai) for LLM fine-tuning. [See PR](https://github.com/ludwig-ai/ludwig/pull/3744).
 
-Please see the [limitations](https://github.com/neelsjain/NEFTune#limitations) of our study below. Additionally, for generation, we suggest using greedy decoding with a repetition penalty of $1.2$.
+Please see the [limitations](https://github.com/neelsjain/NEFTune#limitations) of our study below. Additionally, for generation, we suggest using greedy decoding with a repetition penalty of $1.2$. Note that without the repetition penalty that we have seen performance degrade and generations to degenerate.
 
 Feel free to reach out to me as well (email at the bottom of the page 1 in the paper).
 
