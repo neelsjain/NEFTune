@@ -36,7 +36,7 @@ def get_fsdp_wrapped_empty_model(model_config, wrapped_cls, hack=False):
             model = transformers.AutoModelForCausalLM.from_config(model_config).bfloat16()
         else:
             model = transformers.AutoModelForCausalLM.from_config(model_config)
-    # this ensures that the nonpersistent buffer are overriden by the saved values, when loading the model
+    # this ensures that the nonpersistent buffer are overridden by the saved values, when loading the model
     make_nonpersistent_buffer_persistent(model)
     # hack to make the model wrappable by FSDP
     model.reset_parameters = lambda: None
