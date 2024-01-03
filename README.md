@@ -22,7 +22,7 @@ The easiest way to incorporate NEFTune into your training procedure is to rewrit
 ```
 from torch.nn import functional as F
 
-def NEFTune(model, noise_alpha=5)
+def NEFTune(model, noise_alpha=5):
     def noised_embed(orig_embed, noise_alpha):
         def new_func(x):
             # during training, we add noise to the embedding
